@@ -5,8 +5,8 @@ Covid19 Data - a live data tracking app on the coronavirus spread around the wor
 ---
 
 ### About This App
-* This app created using: React, Material UI, Leaflet, Charts.js.
-* The data displayed on the app is taken from [disease.sh API](https://disease.sh/)
+* This app created using: React, Material UI, Leaflet and Charts.js.
+* The data displayed on the app is taken from [disease.sh API](https://disease.sh/).
 
 ---
 

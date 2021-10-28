@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LaunchIcon from '@material-ui/icons/Launch';
 
 // import Tooltip from '../Tooltip/Tooltip';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
@@ -60,11 +61,11 @@ const App = () => {
         setTableData(sortData(data));
         setMapCountries(data);
     }
-    const mapFlyTo = (center) => {
+    const mapFlyTo = (center, zoom = mapData.focusZoom) => {
         const { current = {} } = mapRef;
         const { leafletElement: map } = current;
     
-        map.flyTo(center, mapData.focusZoom, { duration: mapData.flyDuration });
+        map.flyTo(center, zoom, { duration: mapData.flyDuration });
     }
 
     useEffect(() => {
@@ -84,7 +85,12 @@ const App = () => {
 
         setCountryInfo(data);
         setCountry(countryCode);
-        mapFlyTo([lat, lng]);
+        if ( countryCode === 'worldwide' ) mapFlyTo([lat, lng], 2);
+        else mapFlyTo([lat, lng]);
+
+        if ( window.innerWidth <= 700 ) {
+            document.querySelector('.map').scrollIntoView({behavior: 'smooth', block: 'center'});
+        }
     };
 
     return (
@@ -103,15 +109,19 @@ const App = () => {
                                 modalContent={ {
                                     title: 'About Covid19 Data App',
                                     body: <>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, molestiae pariatur ut exercitationem soluta deleniti distinctio repellendus illo, dignissimos non, earum optio necessitatibus totam facere.</p>
-                                        <div style={{textAlign: 'center', marginTop: '1rem'}}>
-                                            <a href='https://github.com/natesol/react-covid19-tracker'>
+                                        <p>A live data tracking about the coronavirus spread around the world.</p>
+                                        <br />
+                                        <p>This app was created as a - fun personal project, and using these technologies: <b>ReactJS</b>, <b>Material UI</b>, <b>ChartsJS</b> and <b>Leaflet</b>.</p>
+                                        <br />
+                                        <p>The data displayed on the app is a free data from the <b><a href="https://disease.sh/" className='inline-link' target='_blank' rel="noopener noreferrer">disease.sh API <LaunchIcon /></a></b>.</p>
+                                        <br />
+                                        <div style={{textAlign: 'center'}}>
+                                            <a href='https://github.com/natesol/react-covid19-tracker' target='_blank' rel="noopener noreferrer">
                                                 <Button
                                                     variant='contained'
                                                     startIcon={<GitHubIcon />}
-                                                >
-                                                    See Project On GitHub
-                                                </Button>
+                                                    endIcon={<LaunchIcon />}
+                                                >Visit On GitHub</Button>
                                             </a>
                                         </div>
                                     </>

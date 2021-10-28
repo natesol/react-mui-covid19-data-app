@@ -12,6 +12,7 @@
 
 .popup__modal .MuiCardContent-root {
     max-width: 30rem;
+    padding: 2rem !important;
 }
 @media (max-width: 590px) {
     .popup__modal .MuiCardContent-root {
@@ -25,10 +26,12 @@
 }
 
 .popup-modal-title {
+    font-size: 1.8rem;
     font-family: var(--ff-title);
+    font-weight: 900;
     color: var(--prim);
     margin-bottom: 1rem;
-    font-weight: 900;
+    text-align: center;
     word-spacing: 0.1em;
     letter-spacing: 0.01em;
 }
@@ -44,7 +47,7 @@
 }
 .popup-modal-body .MuiButton-root:hover,
 .popup-modal-body .MuiButton-root:active {
-    background: var(--prim-d) !important;
+    /* background: var(--prim-d) !important; */
     box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 7%), 0px 3px 5px 0px rgb(0 0 0 / 16%), 0px 1px 10px 0px rgb(0 0 0 / 8%) !important;
 }
 

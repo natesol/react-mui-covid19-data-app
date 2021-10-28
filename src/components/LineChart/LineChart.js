@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Line } from 'react-chartjs-2';
+import { Line, defaults } from 'react-chartjs-2';
 import numeral from 'numeral';
 
 import { getData } from '../../utility/functions';
@@ -14,7 +14,6 @@ const options = {
         point: {
             radius: 0,
         },
-
     },
     legend: {
         display: false,
@@ -22,6 +21,8 @@ const options = {
     tooltips: {
         mode: 'index',
         intersect: false,
+        titleFontFamily: getComputedStyle(document.documentElement).getPropertyValue('--ff-body').trim(),
+        bodyFontFamily: getComputedStyle(document.documentElement).getPropertyValue('--ff-body').trim(),
         callbacks: {
             label: (tooltipItem, data) => numeral(tooltipItem.value).format('+0,0'),
         },
@@ -34,8 +35,8 @@ const options = {
                 tooptipFormat: 'll',
             },
             ticks: {
-                fontColor: getComputedStyle(document.documentElement).getPropertyValue('--sheet-txt-c').trim(),
-                fontFamily: getComputedStyle(document.documentElement).getPropertyValue('--ff-body').trim(),
+                // fontColor: getComputedStyle(document.documentElement).getPropertyValue('--sheet-txt-c').trim(),
+                // fontFamily: getComputedStyle(document.documentElement).getPropertyValue('--ff-body').trim(),
             }
         }],
         yAxes: [{
@@ -44,8 +45,8 @@ const options = {
             },
             ticks: {
                 callback: (value, index, values) => numeral(value).format('0a'),
-                fontColor: getComputedStyle(document.documentElement).getPropertyValue('--sheet-txt-c').trim(),
-                fontFamily: getComputedStyle(document.documentElement).getPropertyValue('--ff-body').trim(),
+                // fontColor: getComputedStyle(document.documentElement).getPropertyValue('--sheet-txt-c').trim(),
+                // fontFamily: getComputedStyle(document.documentElement).getPropertyValue('--ff-body').trim(),
             },
         }],
     },
@@ -110,6 +111,10 @@ const LineChart = ({ title, caseTypes = 'cases' }) => {
             backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--black').trim() + '7d',
         },
     };
+
+    defaults.global.defaultFontColor = getComputedStyle(document.documentElement).getPropertyValue('--sheet-txt-c').trim();
+    defaults.global.defaultFontFamily = getComputedStyle(document.documentElement).getPropertyValue('--ff-body').trim();
+
 
     return (
         <div className='data-chart'>
