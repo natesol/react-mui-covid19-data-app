@@ -91,7 +91,7 @@ const App = () => {
         <>
             <div className='app__left'>
                 <div className='app__header'>
-                    <a href='/index.html' className='app__header--logo'>
+                    <a href={window.location.href} className='app__header--logo'>
                         <h1>C<span className='material-icons-round'>&#xf221;</span>vid19 Data</h1>
                     </a>
 

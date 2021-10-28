@@ -4,7 +4,11 @@ import { STORAGE_KEY } from './variables';
 export const changeTheme = (newTheme) => {
     document.documentElement.setAttribute('theme', newTheme);
     document.querySelectorAll('.mobile-address-bar-color').forEach( element => element.setAttribute('content', getComputedStyle(document.body).backgroundColor) );
-    document.querySelectorAll('.shortcut-icon').forEach( element => element.setAttribute('href', `/images/icon-${newTheme}-192.png`) );
+    document.querySelectorAll('.shortcut-icon').forEach( element => {
+        const url = element.getAttribute('href').split('/');
+        url[url.length - 1] = `icon-${newTheme}-192.png`;
+        element.setAttribute('href', url.join('/'));
+    });
     
     const data = JSON.parse(localStorage.getItem(STORAGE_KEY));
     data.userPreferences.theme = newTheme;

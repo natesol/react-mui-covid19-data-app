@@ -1,7 +1,7 @@
 {
     "name": "react-mui-covid19-data-app",
     "version": "1.0.0",
-    "homepage": "https://natesol/github.io/react-mui-covid19-data-app",
+    "homepage": "https://natesol.github.io/react-mui-covid19-data-app",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
