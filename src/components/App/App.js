@@ -88,9 +88,7 @@ const App = () => {
         if ( countryCode === 'worldwide' ) mapFlyTo([lat, lng], 2);
         else mapFlyTo([lat, lng]);
 
-        if ( window.innerWidth <= 700 ) {
-            document.querySelector('.map').scrollIntoView({behavior: 'smooth', block: 'center'});
-        }
+        document.querySelector('.map').scrollIntoView({behavior: 'smooth', block: 'center'});
     };
 
     return (
