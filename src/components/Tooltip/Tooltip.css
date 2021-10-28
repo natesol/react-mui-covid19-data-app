@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Custom Tooltip Styles ---------------------------------------------------------------------- */
+
+
+.MuiTooltip-tooltip {
+    opacity: 0.85 !important;
+
+    padding: 0.6rem !important;
+
+    font-family: var(--ff-title) !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.04em !important;
+    text-align: center !important;
+
+    color: var(--tip-txt-c) !important;
+    background-color: var(--tip-bg-c) !important;
+    
+    box-shadow: var(--tip-shadow);
+    
+    max-width: 20rem !important;
+}
+@media (max-width: 360px) {
+    .MuiTooltip-tooltip {
+        max-width: 80vw !important;
+    }
+}
+
+
+.MuiTooltip-arrow {
+    color: var(--tip-bg-c) !important;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */

@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Data Table Styles -------------------------------------------------------------------------- */
+
+.data-table h3 {
+    font-family: var(--ff-title);
+    color: var(--prim);
+}
+
+.data-table table {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1rem;
+    overflow-y: scroll;
+    height: calc(100vh - 18.9rem);
+}
+
+.data-table table::-webkit-resizer {
+    background: none;
+}
+.data-table table::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.data-table table::-webkit-scrollbar-corner {
+    background: none;
+}
+.data-table table::-webkit-scrollbar-thumb {
+    background: var(--sb-th);
+    border-left: 3px solid var(--sheet-bg-c);
+}
+.data-table table::-webkit-scrollbar-track {
+    background: var(--sb-tr);
+    border-left: 5px solid var(--sheet-bg-c);
+    border-right: 2px solid var(--sheet-bg-c);
+}
+
+
+.data-table tr {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 990px) {
+    .data-table tr {
+        width: calc(100vw - var(--gap) * 8 );
+    }
+}
+@media (max-width: 590px) {
+    .data-table tr {
+        width: calc(100vw - var(--gap) * 12 );
+    }
+}
+.data-table tr:nth-of-type(odd) {
+    background-color: var(--sheet-bg-hl);
+}
+
+.data-table td {
+    padding: 0.5rem;
+    opacity: 0.9;
+}
+.data-table td:nth-of-type(even) {
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */

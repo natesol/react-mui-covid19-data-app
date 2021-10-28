@@ -1,0 +1,73 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Map Section (Leaflet) Styles --------------------------------------------------------------- */
+
+.map {
+    height: 100%;
+    border-radius: var(--radius-s);
+    background-color: var(--sheet-bg-c);
+    padding: 1rem;
+}
+@media (max-width: 990px) {
+    .map {
+        height: 65vh;
+    }
+}
+
+.map .leaflet-container {
+    height: 100%;
+    border-radius: var(--radius-s);
+    background-color: var(--map-bg-c);
+    font: inherit;
+}
+.map .leaflet-control {
+    opacity: 0.5;
+}
+.map .leaflet-control:hover,
+.map .leaflet-control:active {
+    opacity: 0.85;
+}
+.map .leaflet-popup-content-wrapper,
+.map .leaflet-popup-tip {
+    background: var(--sheet-bg-c);
+    color: var(--sheet-txt-c);
+    box-shadow: var(--shadow-01);
+}
+.map .leaflet-popup-content-wrapper {
+    border-radius: var(--radius-s);
+}
+.map .leaflet-container a.leaflet-popup-close-button {
+    top: 0.2rem;
+    right: 0.3rem;
+}
+.map .leaflet-popup-content {
+    margin: 0.7rem 0.9rem;
+    line-height: 1.2;
+}
+
+.info-flag {
+    height: 50px;
+    width: 100%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+}
+.info-name {
+    font-family: var(--ff-title);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--sheet-txt-c);
+    text-align: center;
+}
+.info-cases,
+.info-recovered,
+.info-deaths,
+.info-activecase {
+    font-family: var(--ff-body);
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */

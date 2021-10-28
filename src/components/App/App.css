@@ -1,0 +1,284 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* --- App Main Styles ---------------------------------------------------------------------------- */
+
+#app {
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--gap);
+
+    min-height: 100vh;
+    width: 100%;
+    max-width: 80rem;
+
+    margin: auto;
+    padding: var(--gap);
+}
+@media (max-width: 990px) {
+    :root {
+        --gap: 0.8rem !important;
+    }
+    #app {
+        flex-direction: column;
+    }
+}
+@media (max-width: 590px) {
+    :root {
+        --gap: 0.4rem !important;
+    }
+}
+
+.app__left {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.app__right {
+    background-color: var(--sheet-bg-c);
+}
+.app__right .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 2);
+}
+
+
+/* Header --------------------------------------- */
+
+.app__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+
+    user-select: none;
+}
+@media (max-width: 480px) {
+    .app__header {
+        flex-direction: column;
+        gap: var(--gap);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.app__header--logo {
+    color: transparent;
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 2.2rem;
+
+    white-space: nowrap;
+    user-select: none;
+
+    transition: background ease 120ms;
+}
+.app__header--logo:hover,
+.app__header--logo:active {
+    background-image: var(--gradient-d);
+}
+.app__header--logo h1 {
+    font-weight: inherit;
+    font-size: inherit;
+    display: flex;
+}
+.app__header--logo .material-icons-round {
+    font-size: 1.275em;
+    color: var(--body-txt-c);
+    background: none;
+    margin-inline: -0.2rem;
+    margin-top: -0.1rem;
+}
+@media (min-device-width: 591px) and (max-device-width: 700px) {
+    .app__header--logo {
+        font-size: 2.1rem;
+    }
+}
+@media (max-width: 590px) {
+    .app__header--logo {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .app__header--logo {
+        font-size: calc(6vw + 1rem);
+    }
+}
+
+
+.app__header--options {
+    display: flex;
+    gap: var(--gap);
+}
+@media (min-device-width: 591px) and (max-device-width: 700px) {
+    .app__header--options {
+        gap: 0.4rem;
+    }
+}
+@media (max-width: 480px) {
+    .app__header--options {
+        gap: 1rem;
+        padding-top: 0.5rem;
+    }
+}
+
+.MuiFormControl-root {
+    max-width: calc(100vw - 54rem);
+}
+@media (min-width: 1520px) {
+    .MuiFormControl-root {
+        max-width: 30rem;
+    }
+}
+@media (max-width: 1400px) {
+    .MuiFormControl-root {
+        max-width: calc(100vw - 50rem);
+    }
+}
+@media (max-width: 990px) {
+    .MuiFormControl-root {
+        max-width: calc(100vw - 31.4rem);
+    }
+}
+@media (max-width: 700px) {
+    .MuiFormControl-root {
+        max-width: calc(100vw - 29rem);
+    }
+}
+@media (max-width: 590px) {
+    .MuiFormControl-root {
+        max-width: calc(100vw - 25.8rem);
+    }
+}
+@media (max-width: 480px) {
+    .MuiFormControl-root {
+        max-width: calc(100vw - 2 * 1rem - 2 * 3.2rem - 2 * var(--gap));
+    }
+}
+
+
+.app__header--options--btn {
+    width: 2.6rem;
+    height: 2.6rem;
+    
+    background-color: var(--sheet-bg-c) !important;
+    color: var(--sheet-txt-c) !important;
+
+    box-shadow: var(--shadow-01);
+    border-radius: var(--radius-s) !important;
+    border: var(--stats-card-b-h) solid var(--sheet-bg-c) !important;
+}
+.app__header--options--btn:hover,
+.app__header--options--btn:active {
+    background-color: var(--sheet-bg-hl) !important;
+}
+.app__header--options .info-btn {
+    padding: 0;
+}
+.app__header--options .MuiIconButton-label {
+    height: 100%;
+}
+
+
+.app__header .MuiOutlinedInput-root {
+    border-radius: var(--radius-s) !important;
+}
+.app__header .MuiInputBase-root {
+    font-family: var(--ff-body) !important;
+    color: var(--sheet-txt-c) !important;
+}
+.app__header .MuiSelect-select:focus {
+    border-radius: var(--radius-s) !important;
+    background-color: var(--sheet-bg-c) !important;
+}
+.app__header .MuiOutlinedInput-input {
+    padding: calc(0.7rem - var(--stats-card-b-h)) calc(0.85rem  - var(--stats-card-b-h));
+    background-color: var(--sheet-bg-c);
+    box-shadow: var(--shadow-01);
+    border-radius: var(--radius-s) !important;
+    border: var(--stats-card-b-h) solid var(--sheet-bg-c);
+}
+.app__header .MuiOutlinedInput-input:hover,
+.app__header .MuiOutlinedInput-input:active {
+    background-color: var(--sheet-bg-hl) !important;
+}
+.app__header .MuiOutlinedInput-notchedOutline {
+    border-color: var(--sheet-bg-c) !important;
+}
+.app__header .MuiSelect-icon {
+    color: var(--sheet-txt-c);
+}
+
+
+.MuiMenuItem-root {
+    font-family: var(--ff-body) !important;
+}
+[theme="dark"] .MuiListItem-root.Mui-selected,
+[theme="dark"] .MuiListItem-root.Mui-selected:hover {
+    background-color: rgb(3 10 30 / 25%);
+}
+[theme="dark"] .MuiListItem-button:hover {
+    background-color: rgb(0 11 30 / 15%);
+}
+
+
+.MuiPopover-paper {
+    --inner-padding: 0.5rem;
+
+    padding: var(--inner-padding);
+}
+.MuiPopover-paper .MuiMenu-list {
+    padding-right: 0 !important;
+}
+.MuiPopover-paper::-webkit-resizer {
+    background: none;
+}
+.MuiPopover-paper::-webkit-scrollbar {
+    width: calc(10px + var(--inner-padding));
+    height: 10px;
+}
+.MuiPopover-paper::-webkit-scrollbar-corner {
+    background: none;
+}
+.MuiPopover-paper::-webkit-scrollbar-thumb {
+    background: var(--sb-th);
+    border-left: 3px solid var(--sheet-bg-c);
+    border-right: var(--inner-padding) solid var(--sheet-bg-c);
+}
+.MuiPopover-paper::-webkit-scrollbar-track {
+    background: var(--sb-tr);
+    border-left: 5px solid var(--sheet-bg-c);
+    border-right: calc(2px + var(--inner-padding)) solid var(--sheet-bg-c);
+    margin: 0.8rem;
+}
+
+
+/* Stats Cards ---------------------------------- */
+
+.app__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: var(--gap);
+}
+@media (max-width: 700px) {
+    .app__stats {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (max-width: 360px) {
+    .app__stats {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */

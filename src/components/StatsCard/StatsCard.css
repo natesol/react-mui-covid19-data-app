@@ -1,0 +1,78 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Statistics Cards Styles -------------------------------------------------------------------- */
+
+
+.stats-card {
+    width: 100%;
+    cursor: pointer;
+}
+
+.stats-card__cases {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+}
+
+.stats-card p {
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+}
+.stats-card__updated {
+    margin-top: 0.4rem;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+
+.stats-card.MuiButton-text {
+    padding: 0;
+    width: 100%;
+}
+.stats-card .MuiButton-label {
+    display: block;
+}
+
+.stats-card .MuiCardContent-root {
+    border-radius: var(--radius-s);
+    border: var(--stats-card-b-h) solid var(--sheet-bg-c);
+    font-family: var(--ff-body);
+}
+.stats-card .MuiCardContent-root:hover,
+.stats-card .MuiCardContent-root:active {
+    background-color: var(--sheet-bg-hl) !important;
+}
+.MuiCardContent-root:last-child {
+    padding-bottom: 1rem !important;
+}
+
+.stats-card.cases.stats-card__active .MuiCardContent-root {
+    border-color: var(--red);
+}
+.stats-card.recovered.stats-card__active .MuiCardContent-root {
+    border-color: var(--green);
+}
+.stats-card.activecase.stats-card__active .MuiCardContent-root {
+    border-color: var(--blue);
+}
+.stats-card.deaths.stats-card__active .MuiCardContent-root {
+    border-color: var(--black);
+}
+:root[theme="dark"] .stats-card.deaths.stats-card__active .MuiCardContent-root {
+    border-color: var(--gray-06);
+}
+
+.stats-card.cases .stats-card__cases {
+    color: var(--red);
+}
+.stats-card.recovered .stats-card__cases {
+    color: var(--green);
+}
+.stats-card.activecase .stats-card__cases {
+    color: var(--blue);
+}
+.stats-card.deaths .stats-card__cases {
+    color: var(--black);
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */

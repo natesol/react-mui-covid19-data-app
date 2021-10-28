@@ -1,0 +1,97 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Global CSS Custom Properties --------------------------------------------------------------- */
+
+:root {
+
+    /* Typology ----------------------- */
+    --ff-title : 'Poppins', sans-serif;
+    --ff-extra : 'Roboto', sans-serif;
+    --ff-body  : 'Ubuntu', sans-serif;
+
+
+    /* Colors ------------------------- */
+    /* whites, mid-tones and blacks */
+    --gray-00 : #ffffff;
+    --gray-01 : #f9fafb;
+    --gray-02 : #eceef3;
+    --gray-03 : #e5e7eb;
+    --gray-04 : #d1d5db;
+    --gray-05 : #9ca3af;
+    --gray-06 : #6b7280;
+    --gray-07 : #4b5563;
+    --gray-08 : #374151;
+    --gray-09 : #1f2937;
+    --gray-10 : #0c111d;
+    
+
+    /* General Styles ----------------- */
+    --gap : 1rem;
+
+    --radius-s : 0.4rem;
+
+    --stats-card-b-h: 0.15rem;
+
+
+    /* General Animations & Effects --- */
+    --a-fn      : cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    --a-speed-s : 350ms;
+    --a-speed   : 200ms;
+    --a-speed-f : 100ms;
+
+
+    /* Theme Change Animation --------- */
+    --t-c-transition : color var(--a-speed-f) var(--a-fn),
+                       border-color var(--a-speed-f) var(--a-fn),
+                       background-color var(--a-speed-f) var(--a-fn);
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Global Styles ------------------------------------------------------------------------------ */
+
+
+::selection {
+    background-color: var(--gray-09);
+    color: var(--gray-00);
+}
+
+/* firefox custom scrollbar prefix. */
+@supports (scrollbar-width: thin) {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--sb-th) var(--sb-tr);
+    }
+}
+
+body {
+    font-family: var(--ff-body);
+    color: var(--body-txt-c);
+    background-color: var(--body-bg-c);
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Material UI Global Style Overriding -------------------------------------------------------- */
+
+.MuiCardContent-root {
+    padding: 1rem !important;
+    background-color: var(--sheet-bg-c) !important;
+}
+.MuiPaper-elevation1 {
+    box-shadow: var(--shadow-01) !important;
+}
+.MuiPaper-root {
+    color: var(--sheet-txt-c) !important;
+    background-color: var(--sheet-bg-c) !important;
+}
+.MuiPaper-rounded {
+    border-radius: var(--radius-s) !important;
+}
+.MuiButton-root {
+    border-radius: var(--radius-s) !important;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */

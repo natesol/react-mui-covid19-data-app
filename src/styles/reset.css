@@ -1,0 +1,46 @@
+/* ------------------------------------------------------------------------------------------------ */
+/* --- Global CSS Reset --------------------------------------------------------------------------- */
+
+:focus,
+:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+*,
+::before,
+::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+}
+@media only screen and (min-width: 1400px) {
+    html { font-size: 18px }
+}
+@media only screen and (max-width: 700px) {
+    html { font-size: 15px }
+}
+@media only screen and (max-width: 590px) {
+    html { font-size: 14px }
+}
+
+body {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Noto Sans", "Cantarell", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */

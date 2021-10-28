@@ -1,0 +1,20 @@
+{
+    "short_name": "Covid19 Data",
+    "name": "Covid19 Data App App",
+    "icons": [
+        {
+            "src": "images/icon-light-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "images/icon-light-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#f92477",
+    "background_color": "#f8f9fb"
+}
