@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-mui-covid19-data-app/static/css/main.c29090d4.chunk.css",
+    "main.css": "/react-mui-covid19-data-app/static/css/main.0921ea70.chunk.css",
     "main.js": "/react-mui-covid19-data-app/static/js/main.867ca3cf.chunk.js",
     "main.js.map": "/react-mui-covid19-data-app/static/js/main.867ca3cf.chunk.js.map",
     "runtime-main.js": "/react-mui-covid19-data-app/static/js/runtime-main.69594534.js",
@@ -9,17 +9,17 @@
     "static/js/2.6e033312.chunk.js": "/react-mui-covid19-data-app/static/js/2.6e033312.chunk.js",
     "static/js/2.6e033312.chunk.js.map": "/react-mui-covid19-data-app/static/js/2.6e033312.chunk.js.map",
     "index.html": "/react-mui-covid19-data-app/index.html",
-    "precache-manifest.da582ecb4ffc71521b750d9ca62a295a.js": "/react-mui-covid19-data-app/precache-manifest.da582ecb4ffc71521b750d9ca62a295a.js",
+    "precache-manifest.e32b05bea8a25855ccf25e2bc69f8ad4.js": "/react-mui-covid19-data-app/precache-manifest.e32b05bea8a25855ccf25e2bc69f8ad4.js",
     "service-worker.js": "/react-mui-covid19-data-app/service-worker.js",
     "static/css/2.7c35e809.chunk.css.map": "/react-mui-covid19-data-app/static/css/2.7c35e809.chunk.css.map",
-    "static/css/main.c29090d4.chunk.css.map": "/react-mui-covid19-data-app/static/css/main.c29090d4.chunk.css.map",
+    "static/css/main.0921ea70.chunk.css.map": "/react-mui-covid19-data-app/static/css/main.0921ea70.chunk.css.map",
     "static/js/2.6e033312.chunk.js.LICENSE.txt": "/react-mui-covid19-data-app/static/js/2.6e033312.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.69594534.js",
     "static/css/2.7c35e809.chunk.css",
     "static/js/2.6e033312.chunk.js",
-    "static/css/main.c29090d4.chunk.css",
+    "static/css/main.0921ea70.chunk.css",
     "static/js/main.867ca3cf.chunk.js"
   ]
 }
