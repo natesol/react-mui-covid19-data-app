@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-mui-covid19-data-app/static/css/main.aacf4ab0.chunk.css",
-    "main.js": "/react-mui-covid19-data-app/static/js/main.40a7494c.chunk.js",
-    "main.js.map": "/react-mui-covid19-data-app/static/js/main.40a7494c.chunk.js.map",
+    "main.js": "/react-mui-covid19-data-app/static/js/main.0e5a208d.chunk.js",
+    "main.js.map": "/react-mui-covid19-data-app/static/js/main.0e5a208d.chunk.js.map",
     "runtime-main.js": "/react-mui-covid19-data-app/static/js/runtime-main.69594534.js",
     "runtime-main.js.map": "/react-mui-covid19-data-app/static/js/runtime-main.69594534.js.map",
     "static/css/2.7c35e809.chunk.css": "/react-mui-covid19-data-app/static/css/2.7c35e809.chunk.css",
     "static/js/2.f7360669.chunk.js": "/react-mui-covid19-data-app/static/js/2.f7360669.chunk.js",
     "static/js/2.f7360669.chunk.js.map": "/react-mui-covid19-data-app/static/js/2.f7360669.chunk.js.map",
     "index.html": "/react-mui-covid19-data-app/index.html",
-    "precache-manifest.de38454ff81b5d24a3ba5ca3c0ba2c1b.js": "/react-mui-covid19-data-app/precache-manifest.de38454ff81b5d24a3ba5ca3c0ba2c1b.js",
+    "precache-manifest.490b7d1aef01d3a07d76dd150a8bfcec.js": "/react-mui-covid19-data-app/precache-manifest.490b7d1aef01d3a07d76dd150a8bfcec.js",
     "service-worker.js": "/react-mui-covid19-data-app/service-worker.js",
     "static/css/2.7c35e809.chunk.css.map": "/react-mui-covid19-data-app/static/css/2.7c35e809.chunk.css.map",
     "static/css/main.aacf4ab0.chunk.css.map": "/react-mui-covid19-data-app/static/css/main.aacf4ab0.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.7c35e809.chunk.css",
     "static/js/2.f7360669.chunk.js",
     "static/css/main.aacf4ab0.chunk.css",
-    "static/js/main.40a7494c.chunk.js"
+    "static/js/main.0e5a208d.chunk.js"
   ]
 }
